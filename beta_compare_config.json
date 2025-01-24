@@ -1,0 +1,10 @@
+{
+    "base_path":"D:\\work\\Research\\Denoising\\Data\\all_hysterectomy\\test\\755\\20191121_Series012_t0\\steps",
+    "filenames":"['restored_ch01.tif','ch01.tif','6x.tif']",
+    "file_labels":"['Denoised 1x','1x Frame','clean']",
+    "metrics":"['mse','psnr']"
+    
+    
+    
+
+}

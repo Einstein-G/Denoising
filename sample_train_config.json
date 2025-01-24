@@ -1,0 +1,14 @@
+{
+    "data_path":"/media/panagiotis/TOSHIBA EXT1/Research/Denoising/Data/cancer_calibrated/train/cancer_train_small.npz",
+    "model_name":"Cancer_Cells_NADH",
+    "model_save_path":"models/",
+    "train_loss" : "mse",
+    "train_epochs": 200,
+    "train_steps_per_epoch":500,
+    "custom_patches":false,
+    "unet_n_depth":4,
+    "train_learning_rate": 0.00001,
+    "unet_residual":true
+
+
+}

@@ -1,0 +1,7 @@
+{
+    "input_path":"/media/panagiotis/TOSHIBA EXT1/Research/Denoising/Data/macrophage_calibrated",
+    "output_path":"/media/panagiotis/TOSHIBA EXT1/Research/Denoising/Data/macrophage_calibrated/FAD_MSE",
+    "model_name":"Cancer_Cells_FAD_mse",
+    "model_load_path":"models/",
+    "from_arrays":true
+}

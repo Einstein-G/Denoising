@@ -1,0 +1,16 @@
+{
+    "data_path":"/cluster/home/plympe01/georgakoudi_lab01/plympe01/data/cervix_calibrated/train/cervix_train_NADH.npz",
+    "model_name":"Cervix_NADH_mse",
+    "model_save_path":"models/",
+    "train_loss" : "mse",
+    "train_epochs": 100,
+    "train_steps_per_epoch":500,
+    "custom_patches":false,
+    "unet_n_depth":[2,3,4],
+    "train_learning_rate": [0.00001],
+    "unet_kern_size":[3,5],
+    "unet_n_first":[64,32,16],
+    "unet_residual":true
+
+
+}

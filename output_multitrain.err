@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "../generate_2D_data.py", line 175, in <module>
+    X,y = load_mat_data(config["basepath"], key =config["key"])
+  File "../generate_2D_data.py", line 125, in load_mat_data
+    data = loadmat(os.path.join(path,f))
+  File "/cluster/tufts/georgakoudi_lab01/plympe01/condaenv/tf1/lib/python3.6/site-packages/scipy/io/matlab/mio.py", line 217, in loadmat
+    MR, _ = mat_reader_factory(f, **kwargs)
+  File "/cluster/tufts/georgakoudi_lab01/plympe01/condaenv/tf1/lib/python3.6/site-packages/scipy/io/matlab/mio.py", line 78, in mat_reader_factory
+    raise NotImplementedError('Please use HDF reader for matlab v7.3 files')
+NotImplementedError: Please use HDF reader for matlab v7.3 files
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "../train_multiple.py", line 45, in <module>
+    (X,Y), (X_val,Y_val), axes = load_training_data(data_path, validation_split=0.1, verbose=True)
+  File "/cluster/tufts/georgakoudi_lab01/plympe01/condaenv/tf1/lib/python3.6/site-packages/csbdeep/io/__init__.py", line 82, in load_training_data
+    f = np.load(file)
+  File "/cluster/tufts/georgakoudi_lab01/plympe01/condaenv/tf1/lib/python3.6/site-packages/numpy/lib/npyio.py", line 428, in load
+    fid = open(os_fspath(file), "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/cluster/home/plympe01/georgakoudi_lab01/plympe01/data/cervix_calibrated/train/cervix_train_NADH.npz'
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "../train.py", line 23, in <module>
+    f = open(args.config[0],'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'best_Cervix_NADH_mse'
+Error message goes to output.err

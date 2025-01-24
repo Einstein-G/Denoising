@@ -1,0 +1,9 @@
+{
+    "base_path":"/media/panagiotis/TOSHIBA EXT1/Research/Denoising/Data/cancer_calibrated/test/compare",
+    "filenames":"['noisy_nadh','new_nadh','nadh_old','avg_nadh']",
+    "file_labels":"['1x','Denoised 1x','old Denoised 1x','clean']",
+    "metrics":"['mse','psnr']"
+    
+    
+
+}

@@ -1,0 +1,10 @@
+Activating env
+Python 3.6.10
+......................
+../batch_configs/data_cervix_NADH_full.json
+{'basepath': '/cluster/home/plympe01/georgakoudi_lab01/plympe01/data/cervix_calibrated/train/', 'source_dir': '755/', 'target_dir': '860_avg', 'axes': 'ZYX', 'patch_size': '(10,64,64)', 'n_patches_per_image': 256, 'transforms': "['identity','rotate 1']", 'save_file': '/cluster/home/plympe01/georgakoudi_lab01/plympe01/data/cervix_calibrated/train/cervix_train_NADH.npz', 'no_norm': False, 'from_arrays': True, 'key': 'NADH_n'}
+......................
+../batch_configs/train_multi_cervix_NADH_full_mse.json
+{'data_path': '/cluster/home/plympe01/georgakoudi_lab01/plympe01/data/cervix_calibrated/train/cervix_train_NADH.npz', 'model_name': 'Cervix_NADH_mse', 'model_save_path': 'models/', 'train_loss': 'mse', 'train_epochs': 100, 'train_steps_per_epoch': 500, 'custom_patches': False, 'unet_n_depth': [2, 3, 4], 'train_learning_rate': [1e-05], 'unet_kern_size': [3, 5], 'unet_n_first': [64, 32, 16], 'unet_residual': True}
+......................
+best_Cervix_NADH_mse

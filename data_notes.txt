@@ -1,0 +1,71 @@
+---------------------------------------------------------------
+Moving forward I suggest we use 
+Training/Validation: 
+8 ROIs from 20191008
+8 ROIs from 20191114
+
+Testing:
+4 ROIs 20191008
+4 ROIs 20191114
+
+This way the model will see both sparser and denser fields of cells.
+
+The resulting model will be applied on:
+
+Macrophages:
+Control, il4, lps macrophages from 7_25_18 and 1_10_19 x6 hours
+Control, il4, lps macrophages from 7_27_18 and 1_11_19 x24 hours 
+
+Tcells:
+Human tcells 081919
+Stimulated & Unstimulated
+
+--------------------------------------------------------------------
+Cervix Data:
+
+Previously used
+
+Train:
+2 Stacks from 20191121 * 5 single frames
+2 Stacks from 20200220 * 5 single frames
+
+Test:
+1 Stack from 20191121
+1 Stack from 20200220
+
+But there are more stacks now, including diseased tissue.
+Exact proportions not yet determined but probably similar split as before. 
+---------------------------------------------------------------------
+
+Redox code: Pixel intensities matter
+Python code doesnt take into account a couple things
+	-Works on 2D images
+	-3D images need alignment
+
+Denoising will happen independently on channels, no need to align beforehand.
+
+
+Calibrate (or check callibration) Cancer, Macrophage, Tcell
+
+2D: Send calibrated mat data files (X,Y,t) so (1024,1024,12) for 12 frames
+
+3D: Send calibrated mat data files (X,Y,d,t) so (1024,1024,50,6) for 6 frames
+
+Separate files for each channel ROI and channel
+
+Send back denoised tiffs for analysis.
+-------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+

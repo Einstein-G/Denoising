@@ -1,0 +1,13 @@
+{
+    "basepath":"/cluster/home/plympe01/georgakoudi_lab01/plympe01/data/cancer_calibrated/train/",
+    "source_dir":"755/",
+    "target_dir":"860_avg",
+    "axes":"YX",
+    "patch_size":"(64,64)",
+    "n_patches_per_image":512,
+    "transforms": "['identity','rotate 1']",
+    "save_file":"/cluster/home/plympe01/georgakoudi_lab01/plympe01/data/cervix_calibrated/train/cervix_train_NADH.npz",
+    "no_norm":false,
+    "from_arrays":true,
+    "key":"NADH_n"
+}
